@@ -1,7 +1,11 @@
 module.exports.home = function (req, res) {
-    return res.end("<h1>Home</h1>");    
+    return res.render("home", {
+        title : "Home"
+    });   
 }
 
 module.exports.about = function (req, res) {
-    return res.end("<h1>About</h1>");
+    return res.render("about", {
+        title : "About"
+    });  
 }

@@ -1,3 +1,5 @@
-module.exports.post = function (req, res) {
-    return res.end("<h1>User post</h1>")    
+module.exports.like = function (req, res) {
+    return res.render("posts", {
+        title: "Posts"
+    });
 }
